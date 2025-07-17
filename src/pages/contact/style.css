@@ -1,0 +1,129 @@
+/* —— Contact Card Styling —— */
+.sec_sp > .col-lg-5.mb-5 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.sec_sp > .col-lg-5.mb-5 h3.color_sec {
+  color: #10b981; /* accent stays green */
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sec_sp > .col-lg-5.mb-5 address {
+  font-style: normal;
+  line-height: 1.8;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.sec_sp > .col-lg-5.mb-5 address strong {
+  display: inline-block;
+  width: 70px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.sec_sp > .col-lg-5.mb-5 address a {
+  color: #10b981;
+  text-decoration: none;
+}
+.sec_sp > .col-lg-5.mb-5 address a:hover {
+  text-decoration: underline;
+}
+
+.sec_sp > .col-lg-5.mb-5 p,
+.contact-desc {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color-2);
+  font-size: 1.125rem;
+}
+
+/* —— Contact Form Inputs & Button —— */
+.contact__form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact__form label {
+  color: var(--text-color);
+}
+
+.contact__form .form-control {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  border-radius: 0.375rem;
+  padding: 1rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.contact__form .form-control::placeholder {
+  color: var(--text-color-2);
+}
+
+.contact__form .form-control:focus {
+  background-color: var(--focus-bg);
+  border-color: #10b981;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+
+.contact__form textarea.form-control {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.btn.ac_btn {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn.ac_btn:hover {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #000;
+}
+
+/* —— Center the Send button —— */
+.contact__form .form-group:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+/* —— Alert & Loading Bar —— */
+.co_alert {
+  background-color: var(--focus-bg);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+.loading-bar {
+  height: 4px;
+  background: var(--accent-color);
+}
+
+/* —— Animations —— */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

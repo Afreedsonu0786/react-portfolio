@@ -1,0 +1,155 @@
+.sec_sp > .col-lg-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sec_sp {
+  margin-bottom: calc(3rem + 5.128vw);
+}
+
+.about-text {
+  white-space: pre-line;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.t_border {
+  border-color: var(--text-color) !important;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeInUp 0.8s ease both;
+}
+.table thead th {
+  font-weight: 600;
+  border-bottom: 2px solid var(--secondary);
+  padding: 0.75rem;
+  text-align: left;
+  color: var(--text-color);
+}
+.table tbody tr {
+  transition: background-color 0.2s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+.table tbody tr:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.table tbody tr:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.table tbody th,
+.table tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--secondary);
+  color: var(--text-color);
+}
+.table tbody th {
+  font-weight: 700;
+}
+.table tbody td:nth-child(2) {
+  font-weight: 600;
+}
+.table tbody td:nth-child(3) {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+.table tbody tr:hover {
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+.stack-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.stack-item {
+  display: flex;
+  align-items: center;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.375rem;
+}
+.stack-icon {
+  font-size: 1rem;
+  color: #10b981;
+  margin-right: 0.4rem;
+}
+.stack-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.progress-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0 20px;
+  font-family: "Raleway";
+  color: #10b981;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  color: #10b981;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.progress {
+  height: 5px;
+  background: var(--secondary);
+  border-radius: 0;
+  margin-bottom: 30px;
+  overflow: visible;
+  position: relative;
+}
+.progress .progress-bar {
+  position: relative;
+  background: var(--text-color);
+  animation: animate-positive 2s forwards;
+  overflow: visible;
+  opacity: 0.9;
+}
+.progress .progress-value {
+  position: absolute;
+  top: -30px;
+  right: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+@keyframes animate-positive {
+  from {
+    width: 0%;
+  }
+}
+
+.service__title {
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
