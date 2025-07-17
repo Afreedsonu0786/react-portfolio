@@ -5,6 +5,7 @@ import {
   SiRedux,
   SiNextdotjs,
   SiPython,
+  SiTailwindcss,
 } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
@@ -103,11 +104,44 @@ const services = [
 ];
 
 const dataportfolio = [
-  /* Your portfolio items here */
+  {
+    title: "React Portfolio Website",
+    description:
+      "A sleek, responsive portfolio built with React, showcasing my projects and resume. Includes smooth animations, dark/light themes, and mobile-first layouts.",
+    link: "https://github.com/Afreedsonu0786/react-portfolio",
+    stack: [
+      { icon: <FaReact />, name: "React.js" },
+      { icon: <SiJavascript />, name: "JavaScript" },
+      { icon: <SiTailwindcss />, name: "TailwindCSS" },
+    ],
+  },
+  {
+    title: "HealthCare Compass",
+    description:
+      "A decision-support app built in Next.js & TailwindCSS. Lets users search hospitals by treatment and location, with geolocation, cost-tier color coding, and summary charts.",
+    link: "https://github.com/Afreedsonu0786/healthcare_compass",
+    stack: [
+      { icon: <SiNextdotjs />, name: "Next.js" },
+      { icon: <SiTailwindcss />, name: "TailwindCSS" },
+      { icon: <SiJavascript />, name: "JavaScript" },
+    ],
+  },
+  {
+    title: "Chat Friendly App",
+    description:
+      "A real-time chat platform powered by Socket.io, Express.js, and MongoDB. Features user auth, online-status indicators, and Redux-powered state management.",
+    link: "https://github.com/Afreedsonu0786/chat",
+    stack: [
+      { icon: <FaReact />, name: "React.js" },
+      { icon: <SiJavascript />, name: "JavaScript" },
+      { icon: <SiTailwindcss />, name: "TailwindCSS" },
+      { icon: <FaNode />, name: "Node.js" },
+      { icon: <DiMongodb />, name: "MongoDB" },
+    ],
+  },
 ];
-
 const contactConfig = {
-  YOUR_EMAIL: "afreedsonu@gmail.com",
+  YOUR_EMAIL: "afreedsonu0786@gmail.com",
   YOUR_FONE: "314-445-8932",
   description:
     "Let’s build something great together! Feel free to reach out about collaborations or questions.",
